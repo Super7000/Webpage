@@ -1,0 +1,45 @@
+.main {
+    width: 80%;
+    height: 320px;
+    background: #fff;
+    box-shadow: 0 0 19px #000;
+    border-radius: 20px;
+}
+
+.con {
+    position: relative;
+    top: 60px;
+}
+
+.head {
+    font-size: 40px;
+    font-family: verdana;
+    color: red;
+}
+
+.mainp {
+    font-size: 40px;
+    color: dodgerblue;
+    font-family: verdana;
+}
+
+.ap {
+    position: relative;
+    top: 7px;
+    font-family: verdana;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+    border-radius: 10px;
+    background: dodgerblue;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 20px;
+}

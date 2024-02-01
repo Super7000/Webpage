@@ -1,0 +1,36 @@
+.main {
+    width: 60%;
+    height: 340px;
+    background: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 90px;
+}
+
+.head {
+    font-size: 40px;
+    font-family: verdana;
+}
+
+a {
+    position: relative;
+    top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+}
+
+.a1 {
+    background: orange;
+}
+
+.a2 {
+    top: 90px;
+    background: dodgerblue;
+}

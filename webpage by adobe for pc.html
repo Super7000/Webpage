@@ -1,331 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-	<head>
-		<title></title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<link rel="stylesheet" type="text/css" media="screen" href="Styles/main-pc.css">
+</head>
 
-	<body>
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-			body {
-				margin: 0;
-				padding: 0;
-			}
-
-			.mountains {
-				position: absolute;
-				width: 1200px;
-				height: 600px;
-				z-index: -1;
-				height: 100%;
-				width: 100%;
-			}
-
-			.blue {
-				top: 25px;
-				left: 75px;
-				position: absolute;
-				width: 1200px;
-				height: 650px;
-				background: linear-gradient(dodgerblue, lightblue, dodgerblue);
-				opacity: 0.6;
-				border-radius: 20px;
-				z-index: 1;
-			}
-
-			.home,
-			.more,
-			.about,
-			.known,
-			.all {
-				position: relative;
-				padding-left: 40px;
-				padding-top: 10px;
-				padding-right: 40px;
-				padding-bottom: 10px;
-				background: white;
-				opacity: 0.6;
-				float: left;
-				top: 60px;
-				left: 350px;
-				text-align: center;
-				list-style: none;
-				font-size: 1.5em;
-				z-index: 3;
-				color: #000;
-			}
-
-			.home {
-				border-top-left-radius: 5px;
-				border-bottom-left-radius: 5px;
-			}
-
-			.all {
-				border-top-right-radius: 5px;
-				border-bottom-right-radius: 5px;
-			}
-
-			.home:hover,
-			.more:hover,
-			.about:hover,
-			.known:hover,
-			.all:hover {
-				opacity: 1;
-			}
-
-			.search {
-				height: 35px;
-				width: 200px;
-				border-radius: 25px;
-				border: 2px solid #fff;
-				z-index: 10;
-				position: absolute;
-				top: 23%;
-				left: 20%;
-				background: transparent;
-				outline: none;
-				font-size: 20px;
-				color: #fff;
-				padding-left: 35px;
-				padding-right: 20px;
-				z-index: 3;
-			}
-
-			.mou {
-				font-size: 60px;
-				color: #fff;
-				font-family: verdana;
-				position: absolute;
-				top: 32%;
-				left: 20%;
-				z-index: 3;
-			}
-
-			.para {
-				font-size: 30px;
-				color: #fff;
-				font-family: verdana;
-				position: absolute;
-				top: 42%;
-				left: 20%;
-				z-index: 3;
-			}
-
-			.button {
-				text-decoration: none;
-				font-size: 18px;
-				color: #fff;
-				font-family: verdana;
-				position: absolute;
-				top: 52%;
-				left: 20%;
-				border: 2px solid #fff;
-				padding-top: 7px;
-				padding-bottom: 7px;
-				padding-left: 25px;
-				padding-right: 25px;
-				border-radius: 80px;
-				transition: 0.5s;
-				z-index: 3;
-			}
-
-			.button:hover {
-				background: #fff;
-				color: grey;
-			}
-
-			.aboutpara {
-				z-index: 3;
-				color: white;
-				font-family: verdana;
-				width: 350px;
-				font-size: 15px;
-				position: absolute;
-				top: 68%;
-				left: 20%;
-			}
-
-			.abouthead {
-				position: absolute;
-				top: 62%;
-				left: 20%;
-				z-index: 3;
-				color: white;
-				font-family: verdana;
-			}
-
-			.sicon {
-				width: 20px;
-				height: 20px;
-				color: #fff;
-				position: absolute;
-				top: 24.5%;
-				left: 21%;
-				z-index: 3;
-			}
-
-			.socialm {
-				width: 20px;
-				position: absolute;
-				left: 12%;
-				top: 57%;
-				z-index: 3;
-			}
-
-			.facebookicon {
-				padding-top: 40px;
-				font-size: 35px;
-				font-family: verdana;
-				color: #fff;
-				cursor: pointer;
-			}
-
-			.twittericon {
-				position: relative;
-				top: 50px;
-				left: -10px;
-				width: 35px;
-				filter: drop-shadow(0 0 5px #fff);
-				cursor: pointer;
-			}
-
-			.instagramicon {
-				background: transparent;
-				border-radius: 7px;
-				position: relative;
-				top: 20px;
-				left: -10px;
-				border: 3px solid #fff;
-				width: 25px;
-				height: 25px;
-				cursor: pointer;
-			}
-
-			.instagramicon2 {
-				position: relative;
-				left: 4px;
-				top: 4px;
-				width: 11px;
-				height: 11px;
-				border-radius: 50%;
-				border: 3px solid #fff;
-			}
-
-			.instagramicon3 {
-				position: relative;
-				left: 20px;
-				top: -14px;
-				width: 4px;
-				height: 4px;
-				border-radius: 50%;
-				background: #fff;
-			}
-
-			.whead,
-			.wpara {
-				color: white;
-				font-family: verdana;
-				position: absolute;
-				left: 65%;
-				z-index: 3;
-			}
-
-			.whead {
-				top: 35%;
-				font-size: 20px;
-			}
-
-			.wpara {
-				top: 42%;
-				font-size: 15px;
-				width: 200px;
-			}
-
-			.playbtn {
-				width: 50px;
-				height: 50px;
-				position: absolute;
-				top: 33%;
-				left: 58%;
-				z-index: 3;
-			}
-
-			.scorllcon {
-				width: 3px;
-				background: lightblue;
-				position: absolute;
-				left: 87%;
-				top: 33%;
-				height: 55%;
-			}
-
-			.scorllcon:after {
-				content: '';
-				width: 7px;
-				background: #fff;
-				position: absolute;
-				left: -2px;
-				top: 2px;
-				height: 100px;
-				z-index: 3;
-				opacity: 0.7;
-			}
-
-			.wv {
-				position: absolute;
-				width: 70px;
-				height: 70px;
-				border-radius: 50%;
-				z-index: 4;
-				cursor: pointer;
-				opacity: 0.7;
-				top: 30.4%;
-				left: 56.4%;
-				border: 7px solid #fff;
-			}
-
-			.wv:hover {
-				opacity: 1;
-			}
-		</style>
-		<div class="blue"></div>
-		<img src="mountains-nature-landscape\297.jpg" class="mountains">
-		<li class="home" name="menu">Home</li>
-		<li class="more" name="menu">More</li>
-		<li class="about" name="menu">About</li>
-		<li class="known" name="menu">Known</li>
-		<li class="all" name="menu">All</li>
-		<div class="conpara">
-			<input type="text" class="search">
-			<img src="Download\search.svg" class="sicon">
-			<div class="wv"></div>
-			<p class="mou">Mountain</p>
-			<p class="para">Climing Trips & Tours</p>
-			<a href="#" class="button">View More</a>
-			<p class="aboutcon">
-			<h2 class="abouthead">About</h2>
-			<p class="aboutpara">You can easily change the formatting of selected text in the document text by choosing a
-				look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly
-				by using the other controls on the Home tab.</p>
-			</p>
+<body>
+	<div class="blue"></div>
+	<img src="Background/297.jpg" class="mountains">
+	<li class="home" name="menu">Home</li>
+	<li class="more" name="menu">More</li>
+	<li class="about" name="menu">About</li>
+	<li class="known" name="menu">Known</li>
+	<li class="all" name="menu">All</li>
+	<div class="conpara">
+		<input type="text" class="search">
+		<img src="Icons/search.svg" class="sicon">
+		<div class="wv"></div>
+		<p class="mou">Mountain</p>
+		<p class="para">Climing Trips & Tours</p>
+		<a href="#" class="button">View More</a>
+		<p class="aboutcon">
+		<h2 class="abouthead">About</h2>
+		<p class="aboutpara">You can easily change the formatting of selected text in the document text by choosing a
+			look for the selected text from the Quick Styles gallery on the Home tab. You can also format text directly
+			by using the other controls on the Home tab.</p>
+		</p>
+	</div>
+	<div class="socialm">
+		<div class="facebookicon"><b>f</b></div>
+		<div class="instagramicon">
+			<div class="instagramicon2"></div>
+			<div class="instagramicon3"></div>
 		</div>
-		<div class="socialm">
-			<div class="facebookicon"><b>f</b></div>
-			<div class="instagramicon">
-				<div class="instagramicon2"></div>
-				<div class="instagramicon3"></div>
-			</div>
-			<img class="twittericon" src="Download\twitter.png">
-		</div>
-		<img class="playbtn" src="Download\play.svg">
-		<p class="whead">Watch Video</p>
-		<p class="wpara">You can also format text directly by using the other controls on the Home tab.</p>
-		<div class="scorllcon"></div>
-	</body>
+		<img class="twittericon" src="Icons/twitter.png">
+	</div>
+	<img class="playbtn" src="Icons/play.svg">
+	<p class="whead">Watch Video</p>
+	<p class="wpara">You can also format text directly by using the other controls on the Home tab.</p>
+	<div class="scorllcon"></div>
+</body>
 
 </html>
